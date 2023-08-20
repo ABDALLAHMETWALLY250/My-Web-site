@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon"
+    href="data:image/jpeg;base64,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">
+  <script src="https://kit.fontawesome.com/96d66a2ef7.js" crossorigin="anonymous"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Porrfolio & Some intro for HTML, CSS, JavaScript, Bootstrap, SASS, GitHub ">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, SASS, GitHub, Porrfolio">
+  <meta name="author" content="ABDALLAH Mohamed">
+  <title>ABDALLAH</title>
+  <link rel="stylesheet" href="hover-min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="using wow/animate.css">
+  <script src="using wow/wow.js"></script>
+  <script>new WOW().init();</script> -->
+</head>
+
+<body>
+
+  <div>
+    <div class="w">
+      <nav class="navbar navbar-expand-lg  w " style="position: fixed; z-index: 4565; width: 100%; ">
+        <div class="container-fluid">
+          <img class="rounded-3 p-1" width="50px" height="50px"
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PEA8NDREPDQ0NDhAPDQ4NDw8NDQ0PFRUWFhURFRUYHSggGBolGxMTIjEhJSkrLi46Fx8zODMtNygtLisBCgoKDg0OGBAQFysfICU2LzcrLS0vLS0tKy4rLSstNy0tLS0vKy0tKzArNS0xKystLSsrLSsxLS0tLS0rLS0tLf/AABEIAOYA2wMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQYCAwUEB//EADwQAAIBAgIGBwQJAwUAAAAAAAABAgMRBAUSEyExQVEGImFxgZGhMnKCsRQVI0JDUlPB0QdzkmKiwuHw/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAEFAgQGAwf/xAAxEQEAAQMBBQUIAwADAAAAAAAAAQIDEQQFEhMhMUFRcYGhFFJTYbHB0eEVkfAiI0L/2gAMAwEAAhEDEQA/APuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAEAAAEALgLgAJAASAAAAAAAAAAAAAAAAAAAACAAEAYymlvaXfsCYiZY62PNeaIyndnuRrY815oZN2e410fzLzQybs9zKNSL3NN9jTJRMTHWGYQkABIAAAAAAAAAAAAAAAAAAgABAENhL5p07zLWYhwjtjQWrXFaW+frs+Er9RXmrHc67Y2n3LG9PWrn5dn581ZdZ9nka643YYuo+zyCcMXbkvIMm7L8dUwtWOJo2jOne/VTUoPZKL7LfJGdurcqipra2x7TYqtd/Txjp+PN9ayLOaeKpqa6s/vR5MtIl8/mMOsmShIACQAAAAAAAAAAAAAAAEAAIAhgeTM8WqFKpWf4cG0ucvurxdkYV1bsTL2sWZvXKbcdr43jKrnNyk7tttvm3tbKuZzL6BbpimmIhoIegAAAdTo1mUqE9j2RejJdnB+ViwsV71Hg4za+m4Wpqx0q5x59fXPlh9Sy3MI1Ip33o98qmYdFMlCQAEgAAAAAAAAAAAAAAQAAgDFhKnf1CzDRhTw6e2f2k/dWyK87/AOJqamrlFK+2Hp96uq7PZyj7/wC+b522aTqgJAAABTlozT4S6r796/fzPfT14rx3qnbOn4mn34608/Kev2lbuj2ZODUG9j3G+4+YXzB4jSSMmD2phCQJAAAAAAAAAAAAABAACAIYGLIlL5H0ozD6RiKlRO8XK0Pcjsj52v4srLtW9VMu62fp+DYpp7e3xlxzzb4AAAAMakbprc+D5PgxnHOETTFUTTVGYnr4S6OX17qMtz325PkWlNW9ES4LUWZs3arc9k/6fOOa+5DjdKKM2rMLNRncli3AAJAAAAAAAAAAAACADAgCGEuN0qx+owtSSdp1Ps4c7y3vwVzxvVbtEt/ZtjjaimJ6Rzny/b5JUldtla7iIxDEMgBcAAAAZYKejJx4PrL9/Xb4m3pa+U0ub27p8VU3o7eU+MdPTl5LZkGKtLRNtzswvOCq3SMnm6EWBIEgAAAAAAAAAAABAEAAMWRKXzz+oWYaVWNCL2UY9b+5KzfktHzZo6mrM47nVbD0+7am5P8A6+kfvKmmsvwABzqmPisVChfbKnJpdqafyGJxlE3KYqi3PWYmY8sfn0dEJAAGurLRtP8AK7v3ePpt8DKivcqiWtq9P7RYrt9s9PGOn483cwFazi+RaOEX7KMRdImHnLvUpEsWwABIAAAAAAAAABAACAICWjF1404Tqz9mnFyl3JXMapxGZZ26JuVxRT1l8azLEyq1J1Je1OTlLvbuVVU5nL6BYtxboimOkPKQ9gCJySTb3JXYkiMzh86xePl9L+kr8OorLnFPrLxvJG5bt/8AVuz2uX1mtxruLHSiceUcp/vm+iwkpJSW1SSafNPcabp4mJ5wkJAIauCG/K6mzRe+D0eexbn5WLCxXvUR8nG7W0/B1NWOlXOPPr658l16PYrcnwPZVSuWFndGTB6kBIEgAAAAAAAAAEAGBDAxYSqvT/MNXQjQT61eV5f24WfrJx8maupqxTjvXWxNPv3puT0p+s/rL5q2aLrkBIBy+kWL1VCVval1Yk0U79UUvHU3+BYru9sRy8Z5R6qKqZZuGXjoridZhlF+1Qlq3z0d8X5O3gaN+nFWe91eyr/EsRTPWnl+PR1jxWgAAwpS0KifCfVfetq/f0PfT1Yrx3qnbWn4mn4kdaPpPKftP9rLlGI0ZrkzfchK/ZbWukTDzl1oMlDIABIAAAAAAAEAAIAhgYsiUvlXTLMNfialneFP7KHK0d7/AMtL0K6/XvVy7bZWn4Onpz1nnPn+sOAeKzAAFP6WYvSqxpLdBXff/wC+Rs6anrUotuXsU0WY8Z+kfdx00bTnnX6I4tQxOqfs4iOh8cbyh/zXxHlfpzT4LLZV7h393sq+sdPuuTRourQEgGvEQvHZvW1djW1eo6c4N2KommrpPKfCeTpZfiNJRktl0n3dhaUVb1MTDgL9mbNyq3V1icL3kOKvFGbWlaKEiWLeAAkAAAAAAACAAEAQwlzOkGP+j4erVWySjo0/flsj5Xv4Hndq3aZltaGxx79NHZ2+EPj9SV2VbvYjEMAyAIk3Z22vguZBCqV+jGJqVJVZVaac3e1pOxs270U0xGFLrNmXNRequb8c+kYnlEMl0Qrfr018EzP2iO5qfwtz34/pMOh9eMozhiaSlCUZxernslF3XHsHtFM9iY2RepmJiuMx8pW6utt9m3fbdc1JdDRnHNqDMAAMvnozlT+KPc9/r8zb0tfKaXObe0+KqL8dvKfGOnp9FuyDE2lY23OSvOCqXSMnm6CYEgSAAAAAAABAEAQwIYSoX9RcwvKnhk9kFrZ+89kfJaX+RpaqvnFLpdg6fFNV2e3lHh2+v0Uc1HSAAAAAAAAAAAA013ouNT8r63uvY/58DKivcriWvrNP7Rp67fb1jxjnH99PN3svr2afItHBL9lGIukTDCXepSuiWLYAAkAAAAAIAAQBDA11akYpyk9GMU5Sb3JJXb8iJZU0zVMRHWXxrN8a69apWl+JNyS5R+6vBJLwKqureqmX0DS2Is2qbcdkf71eIxbAAAAAAAAAAAAMakbprmRJE4luymteOi98HoPw3PysWFiveoj5ON2tpuBqasdKucef7yvHR3FbFHke6qlccLO6MmD1oABIAAAAAQAAhgYsJVrp3mGqwrpp9fES1fwb5vutZfEa+orxRjvW2xtPxdRvT0p5+fZ+fJ8wbK92SAkAiUkt7S7wREyjWR5rzIyndnuNZHmhkxJprmhlGJTpLmMmDSRJhNwAAABqpS0Kq/LUVviW1el/Q9tNXu1471TtrT8XTRcjrRPpPX1x6rPk+I0ZLkywchK/ZdWukTDzl1oMlDICQAAAAAgAwMWBiwl8v6dZhrsVKEX1MOtUuWnvm/PZ8JXaiverx3Oy2Np+Fp4qnrVz8uz8+atngtwABysx+0qKHCCu+97v3M7NEV18+kNLaWqq02nzROKqp5fdNPL48UbnAt+65z+V1nxZ9Pw9Ecsh+X5k8C37rH+W1nxZ9Pwz+rIcvVjgW/dP5bWfFn0/CHlseXqxwLfun8rrPiz6fhqngUufmxwLfup/ldZ8WfT8NeHi6c1vs9m1tmvftU0xE0wtdla+7euVW7tWcxmOnZ+vo6ZrrwAAacXBuN4+1HbHvW1EZxzg3aaomirpPKfN1MuxGlGMlxSfcWtNW9ETDgL9mqzcqt1dYnC+ZDitKKM2tKz0JEsW8CQAAAAAgCAIYHhzjHLD0Ktd2erg3FP7090Y+Mml4mNdW7TMtjTWJv3abcds+nb6PjNSTbbk3KTd5Se+Te9sqX0CIiIxEYhiGQBE5WTb4IERmXgy6k5XqPfOTfhwNzTUYoz3uX25qOJqNyOlMY8+s/aPJ16VA2VJMvVCgSjLPUBDGVAJy0VKBCcudi8PsfzMa6d6Jh76e/Nm5TcjsnP682WHnpRT48ex8Sr+Uu8zE4qp6TzjwlsJAAwMcrnoTnSfB6ce5715/M29LVymlzm39Piui/Hbynxj8x9FyyDE2djbc5K84KpdIyeb3oCQAAAAAgABgwKP/UjMbKlhIvbJ66qv9K2QT8dJ/CjU1VfSl0ewNPmar09nKPv/AL5qEaTpwAB48yk9FU1vqSUfDiRiapimCq5Fqiq7V0pjLpYLD2SSWxKyLaIiIxD59XXNdU1VdZ5z5ulSpEvPL0RpEoy9tHLnIIy3fUz7QZa55I+0hOXkr5A3zGE5V/G4GWHqaD9monKL7Vskvk/Er9RTu1573Y7H1HF027PWjl5dY+8eTWeK0AAHmxEtCUKvCLtP3Xv/AGfgZW6tyuJa+s0/tGnrtdvWPGP9hZctq2cXyLRwMr9lNa8UTDCXbpslDYAAAAAACAMWgPj3SytXli6061KrByl9lGUfwY9WD7LqN7c2yuu03Kqpndl2mh1Gksaei3xacxHPxnnP4cZ1JfkqeX/Z58K57stv2/S/FpYOtP8ATqPwX8jhXPdlPt2k+NSx19X9Gp/t/kjh3PdlPt2j+NS2YLB1atXWTg4RhG0VK22T3vyXqe+ntVRVvVRhV7Y2hZq08WrNcVZnnjuj94WGjh7G65bL1QpEoerC0byRCFkwmGVkThD3wwyJQyeFQGEsGuRGE5V7pfkM61DSoxc61GcZ04x9qa3SivBt+CPDUW5rp5dYWuyNZTp9R/znFNUYn6xP9/V86nKpFtSpVE02mnFXTXDeaXCue7Lqvb9J8WljrZ/p1PJfyOFc92T27SfGpRrp/pVPJfyOHc92T27SfGpYVJVJJxdGo09m6P8AJE2rnuyyjX6SJzxqVh6P4epqoaxOMl1Wpb3bc/FWLCzvbkb0c3G7R4UamubVUTTPOMfPs/v0XPJKlklyPZXrPh5AegAAAAAAACAOJ0iyOGKjpbqsFaMua5MiYTE4ULFZbKnJxmrP0ZD0y0/RkE5ZRwq5BGXpp0bBi3xphDYoAy6OWUNtyYQseGpkoe6EAM9EBoARoICsdJOjUajdekkpvbNcJPn3kTDKKlOqYJxbjJWa4MhnlisMgnLbTwq5BjMulh4WViYYS9+CnoyXaShacHUugPfFgSAAAAAACAIYHMzTLYVE7oJyqeMyyVNvZdepinLyqmBmoAyzUCUMlEYHdy6jZIlDtUYgemKAyAAQAaA4ecZRCptS280RhMSq9fAypuzWzmQnLGNMGW6ETJDagh38rrXSA7VKQGwAAAAAAACAIaA8eJwilwA59TLY8gMPq9cgH1euQGUcAlwA9tGhYD104gbkAAAAAESjcDwYjBRfADwyy1LgAWXrkBKwC5AejDYfRA6FNAbgAAAAAAAAACGgMJUwMNUA1QDVAZKAGaQGQAAAAAAIaA1umBGqAasCdWBkkBmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2Q=="
+            alt="Error..">
+          <h2 style="font-weight:800; font-size:30px ;  " id="h" class="navbar-brand text-light">ABDALLAH</h2>
+          <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a style="font-size: 18px;" class="nav-link active text-light hvr-bounce-to-bottom" id="o"
+                  aria-current="page" href="#Home"> <i style="padding-right:5px;"
+                    class="fa-solid fa-house "></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-size:18px ;" class="nav-link text-light hvr-bounce-to-bottom" id="A" href="#About ME"> <i
+                    style="padding-right:5px;" class="fa-sharp fa-solid fa-address-card"></i>About Me</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-size:18px ;" class="nav-link text-light hvr-bounce-to-bottom" id="c" href="#Services"> <i
+                    style="padding-right:5px;" class="fa-solid fa-gear fa-spin"></i>Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="font-size: 18px;" id="T" class="nav-link dropdown-toggle text-light hvr-bounce-to-bottom"
+                  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i style="padding-right: 5px;" class="fa-solid fa-circle-chevron-down"></i>Other
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hvr-bounce-to-bottom hvr-bob" href="#Skills"><i
+                        style="padding-right:5px ;" class="fa-solid fa-brain"></i>Skills</a></li>
+                  <li><a class="dropdown-item hvr-bounce-to-bottom hvr-bob " href="#Some Of My Work"> <i
+                        style="padding-right:5px ;" class="fa-solid fa-briefcase"></i>Some Of My Work</a></li>
+                  <li><a class="dropdown-item hvr-bounce-to-bottom hvr-bob" href="#Contact"> <i
+                        style="padding-right:5px ;" class="fa-solid fa-comments"></i>Contact</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item" style="margin:10px  0  10px  20px ;">
+                <div>
+                  <div>
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <div class="ball"></div>
+                    </label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 w-100 h-50" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary w-50 " type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="Home" class="alert alert-primary text-center font-monospace fw-bolder fs-normal  e wow flash  "
+      data-wow-duration="2s" style="min-width:100% ;" role="alert">
+      <br>
+      <br>
+      <br>
+      Welcome in My Web site
+    </div>
+    <div id="y">
+      <p style="      font-size: 45px !important;
+      font-weight: 400 !important;
+      color: #dbdbdb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100vh;">I'M <span class="typed-text"></span> <span class="cursor text-light">&nbsp;</span></p>
+    </div>
+    <!-- s About Me -->
+    <br id="About ME">
+    <br>
+    <br>
+    <h2 class="  text-center bg-dark  h2" style="padding: 10px;" id="About ME"><i style="padding-right:10px;"
+        class="fa-sharp fa-solid fa-address-card"></i>About Me</h2>
+    <div class=" bg-dark py-2  wow flash " data-wow-duration="3s">
+      <div class="cont ">
+        <div style="transition: none;" class="card mb-3 bg-secondary text-bg-light">
+          <div class="row g-0">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img style="    height: -webkit-fill-available;"
+                src="https://w10.naukri.com/mailers/2021/naukri-learning/oct/27oct-v2/What-is-Web-Developer.jpg"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="lpo card-body" style=" min-height: 400px; ">
+                <h5 style="text-transform: capitalize;" class=" card-title">hi, i am abdallah mohamed , based in
+                  mansoura</h5>
+                <p style="font-size: 16px; text-transform: capitalize; font-weight: 600;" class="card-text">I Have One
+                  Year Experience In Front-End Development
+                  i am a front-end Web developer from egypt.i can provide clean code
+                  and pixel perfect design .i also make the website more &
+                  more interactive with web animations. i can provide clean
+                  code and pixel perfect design. i also make the website more
+                  & more interactive with web animation. a responsive design
+                  makes your website accessible to all users, regardless of their device.</p>
+                <hr>
+                <div style="font-size: 16px; font-weight: bolder;" class="row gf">
+                  <div class="col das">
+                    <p style="border-bottom:2px solid ; " class="card-text">
+                      Name : Abdallah Mohamed
+                    </p>
+                    <p style="border-bottom:2px solid ;" class="card-text">
+                      Age : 21 years
+                    </p>
+                    <p style="border-bottom:2px solid ;" class="card-text">
+                      Nationality : Egyptian
+                    </p>
+                    <p style="border-bottom:2px solid ;" class="card-text">
+                      Work Status : Front-End(Vue.js)
+                    </p>
+                  </div>
+                  <div class="col">
+                    <p style="border-bottom:2px solid ; margin-top: 14px;" class="card-text">
+                      Phone : +20 1550736508
+                    </p>
+                    <p style="border-bottom:2px solid ;" class="card-text">
+                      Email : abdometwaly250@gmail.com
+                    </p>
+                    <p style="border-bottom:2px solid ;" class="card-text">
+                      Freelancer : Available
+                    </p>
+                    <p style="border-bottom:2px solid ;" class="card-text">
+                      <a target="_blank" href="cv (1).pdf" download class="btn hvr-bob btn-primary d-block"> <i
+                          style="padding-right:10px ;" class="fa-solid fa-graduation-cap"></i> My C.V as PDF </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row  py-2 bg-dark row-cols-1 row-cols-md-2 g-4 text-center wow bounceInRight" data-wow-duration="2s"
+      style=" width: 100%; margin: auto; ">
+      <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+        <div class="card cal">
+          <div class="card-body text-center hvr-sweep-to-right toi">
+            <h5 class="card-title"><i class="fa-solid fa-user ou "></i></h5>
+            <p class="card-text fw-bolder">+11 Projects Complates</p>
+            <a href="#Some Of My Work" class="btn hvr-bob btn-primary">Go Some Of My Work</a>
+          </div>
+        </div>
+      </div>
+      <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+        <div class="card cal">
+          <div class="card-body toi hvr-sweep-to-right text-center">
+            <h5 class="card-title"><i class="fa-solid fa-mug-hot ou"></i></h5>
+            <p class="card-text fw-bolder">+1000 Cup of coffe</p>
+            <a href="#Some Of My Work" class="btn hvr-bob btn-primary">Go Some Of My Work</a>
+          </div>
+        </div>
+      </div>
+      <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+        <div class="card cal">
+          <div class="card-body toi hvr-sweep-to-right text-center">
+            <h5 class="card-title"><i class="fa-solid fa-face-smile ou"></i></h5>
+            <p class="card-text fw-bolder">+100 Satisfied Clients</p>
+            <a href="#Some Of My Work" class="btn hvr-bob btn-primary">Go Some Of My Work</a>
+          </div>
+        </div>
+      </div>
+      <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+        <div class="card cal">
+          <div class="card-body toi hvr-sweep-to-right text-center">
+            <h5 class="card-title"><i class="fa-solid fa-face-smile ou"></i></h5>
+            <p class="card-text fw-bolder">+1Years job experience</p>
+            <a href="#Some Of My Work" class="btn hvr-bob btn-primary">Go Some Of My Work</a>
+          </div>
+        </div>
+      </div>
+      <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+        <div class="card cal">
+          <div class="card-body toi hvr-sweep-to-right text-center">
+            <h5 class="card-title"><i class="fa-solid fa-code ou"></i></h5>
+            <p class="card-text fw-bolder">+2000 lines of code</p>
+            <a href="#Some Of My Work" class="btn hvr-bob btn-primary">Go Some Of My Work</a>
+          </div>
+        </div>
+      </div>
+      <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+        <div class="card cal ">
+          <div class="card-body toi hvr-sweep-to-right text-center">
+            <h5 class="card-title"><i class="fa-solid fa-award ou"></i></h5>
+            <p class="card-text fw-bolder">+5 Awards won</p>
+            <a href="#Some Of My Work" class="btn hvr-bob btn-primary">Go Some Of My Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- e Servises -->
+  </div>
+  <!-- e About Me-->
+
+  <!-- s Servises -->
+  <br id="Services">
+  <br>
+  <br>
+  <h2 style="padding:10px ;" class="h2 bg-dark text-center wow bounceInUp " data-wow-duration="2s"> <i
+      style="padding-right:10px;" class="fa-solid fa-gear fa-spin"></i>Services</h2>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://rijsat.com/wp-content/uploads/2021/01/html-illustration.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.tutorialrepublic.com/lib/images/css-illustration.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png" class="d-block w-100"
+          alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" class="d-block w-100"
+          alt="...">
+      </div>
+      <div style="height:533px;" class="carousel-item git">
+        <img src="https://www.howtogeek.com/wp-content/uploads/2022/08/github_hero_2.jpg?height=200p&trim=2,2,2,2"
+          class="d-block w-100 git" style="height:533px;object-fit: cover;" alt="...">
+      </div>
+      <div class="carousel-item git">
+        <img src="https://evondev.com/wp-content/uploads/2019/03/mixin-in-sass.jpg" class="d-block w-100 git" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.tutorialrepublic.com/lib/images/jquery-illustration.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item git">
+        <img src="https://letket.com/wp-content/uploads/2021/07/01-vuejs.jpg" class="d-block git w-100" alt="...">
+      </div>
+      <div class="carousel-item git">
+        <img src="https://sidigital.co/static/4d4fd728ede59b2316885774f867a3fa/91d6e/OG-WordPress.png"
+          class="d-block w-100 git" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span style="background-color:black;border-radius:10px ; " class="carousel-control-prev-icon"
+        aria-hidden="true"></span>
+      <span style="background-color:black;border-radius:10px ; " class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span style="background-color:black;border-radius:10px ; " class="carousel-control-next-icon"
+        aria-hidden="true"></span>
+      <span style="background-color:black;border-radius:10px ; " class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+
+  <div id="asdas" class="row  bg-dark row-cols-1 row-cols-md-2 g-4 text-center wow bounceInRight" data-wow-duration="2s"
+    style=" width: 100%; margin: auto;  overflow: hidden;">
+    <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+      <div class="card">
+        <img height="400px" src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg"
+          class="card-img-top im" alt="...">
+        <p class="par">Hover or CLICK </p>
+        <div class=" g card-body" style="min-height:365px ;">
+          <h4 class="card-title"><i style="padding-right:3px;" class="fa-brands fa-html5"></i>HTML5</h4>
+          <p class=" g card-text">
+          <ul>
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>HTML is the standard markup language for creating Web pages</li>
+            <li>HTML describes the structure of a Web page</li>
+            <li>HTML consists of a series of elements</li>
+            <li>HTML elements tell the browser how to display the content</li>
+            <li>HTML elements label pieces of content such as "this is a heading", "this
+              is a paragraph", "this is a link", etc.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col wow fadeOut" data-wow-delay="1s" data-wow-duration="2s">
+      <div class="card">
+        <img height="400px"
+          src="https://colorlib.com/cdn-cgi/image/width=1400,height=802,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/sites/2/creative-css3-tutorials.jpg"
+          class="card-img-top im" alt="...">
+        <p class="par">Hover or CLICK </p>
+        <div class=" g card-body" style="min-height:365px ;">
+          <h4 class="card-title"><i style="padding-right: 3px;" class="fa-brands fa-css3-alt"></i> Css3</h4>
+          <p class="g card-text">
+          <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>CSS describes how HTML elements are to be displayed on screen,
+              paper, or in other media</li>
+            <li>CSS saves a lot of work. It can control the layout of
+              multiple web pages all at once</li>
+            <li>External stylesheets are stored in CSS files</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+      <div class="card">
+        <img height="400px"
+          src="https://cyberlancers.com/images/default-source/blog/bootstrap-logo.png?sfvrsn=106f9c97_1"
+          class="card-img-top im" alt="...">
+        <p class="par">Hover or CLICK </p>
+        <div class=" g card-body" style="min-height:365px ;">
+          <h5 class="card-title"><i style="padding-right: 3px;" class="fa-brands fa-bootstrap"></i>Bootstrap5</h5>
+          <p class="g card-text">
+          <ul>
+            <li>Bootstrap is a free front-end framework for faster and easier web development</li>
+            <li>Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables,
+              navigation, modals, image carousels and many other, as well as optional JavaScript plugins</li>
+            <li>Bootstrap also gives you the ability to easily create responsive designs</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col wow fadeOut" data-wow-delay="1s" data-wow-duration="2s">
+      <div class="card">
+        <img style="object-fit: contain;" height="400px"
+          src="https://static.javatpoint.com/images/javascript/javascript_logo.png" class="card-img-top im" alt="...">
+        <p class="par">Hover or CLICK </p>
+        <div class=" g card-body" style="min-height:365px ;">
+          <h5 class="card-title"><i style="padding-right: 3px;" class="fa-brands fa-square-js"></i>JS</h5>
+          <p class="g card-text">
+          <ul>
+            <li>JS stands for Java Script</li>
+            <li>JavaScript is the world's most popular programming language.</li>
+            <li>JavaScript is the programming language of the Web.</li>
+            <li>JavaScript is easy to learn.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+      <div class="card">
+        <img style="object-fit: contain;" height="400px"
+          src="https://miro.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png" class="card-img-top im" alt="...">
+        <p class="par">Hover or CLICK </p>
+        <div class=" g card-body" style="min-height:365px ;">
+          <h5 class="card-title"><i style="padding-right: 3px;" class="fa-brands fa-sass"></i>SASS</h5>
+          <p class="g card-text">
+          <ul>
+            <li><strong>Sass</strong> stands for <strong>S</strong>yntactically <strong>A</strong>wesome
+              <strong>S</strong>tyle<strong>s</strong>heet
+            </li>
+            <li>Sass is an extension to CSS</li>
+            <li>Sass is a CSS pre-processor</li>
+            <li>Sass is completely compatible with all versions of CSS</li>
+            <li>Sass reduces repetition of CSS and therefore saves time</li>
+            <li>Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in
+              2006</li>
+            <li>Sass is free to download and use</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col wow fadeOut" data-wow-delay="1s" data-wow-duration="2s">
+      <div class="card">
+        <img height="400px" src="https://miro.medium.com/max/1400/0*W_ZzRNmblhBgm_u8.jpg" class="card-img-top im"
+          alt="...">
+        <p class="par">Hover or CLICK </p>
+        <div class=" g card-body" style="min-height:365px ;">
+          <h5 class="  card-title"><i style="padding-right: 3px;" class="fa-brands fa-github"></i>Git Hub</h5>
+          <p class=" card-text">
+          <ul>
+            <li>Git is not the same as GitHub.</li>
+            <li>GitHub makes tools that use Git.</li>
+            <li>GitHub is the largest host of source code in the world, and has been owned
+              by Microsoft since 2018.</li>
+            <li>In this tutorial, we will focus on using Git with GitHub.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+      <div class="card">
+        <img height="400px" style="object-fit: contain;"
+          src="https://www.joykal.com/wp-content/uploads/2019/09/jquery.png" class="card-img-top im" alt="...">
+        <p class="par">Hover or CLICK </p>
+        <div class=" g card-body" style="min-height:365px ;">
+          <h5 class="  card-title"><img width="30" style="padding-right: 3px;"
+              src="https://img.icons8.com/ios-filled/344/jquery.png" alt="">Jquery</h5>
+          <p class=" card-text">
+          <ul>
+            <li>jQuery is a JavaScript Library.</li>
+            <li>jQuery greatly simplifies JavaScript programming.</li>
+            <li>HTML/DOM manipulation</li>
+            <li>CSS manipulation</li>
+            <li>HTML event methods</li>
+            <li>Effects and animations</li>
+            <li>AJAX</li>
+            <li>Utilities</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col wow fadeOut" data-wow-delay="1s" data-wow-duration="2s">
+      <div class="card">
+        <img height="400px" style="object-fit: contain;"
+          src="https://miro.medium.com/max/666/1*yGrOUQyqX3MBekvP5d-pCA.png" class="card-img-top im" alt="...">
+        <p class="par">Hover or CLICK </p>
+        <div class=" g card-body" style="min-height:365px ;">
+          <h5 class="  card-title"><i style="padding-right: 3px;" class="fa-brands fa-vuejs"></i>Vue</h5>
+          <p class=" card-text">
+          <ul>
+            <li>Enhancing static HTML without a build step</li>
+            <li>Embedding as Web Components on any page</li>
+            <li>Single-Page Application (SPA)</li>
+            <li>Fullstack / Server-Side Rendering (SSR)</li>
+            <li>Jamstack / Static Site Generation (SSG)</li>
+            <li>Targeting desktop, mobile, WebGL, and even the terminal</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+      <div class="card">
+        <img height="400px" style="object-fit: contain;"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png"
+          class="card-img-top im" alt="...">
+        <p class="par">Hover or CLICK </p>
+        <div class=" g card-body" style="min-height:365px ;">
+          <h5 class="  card-title"><i style="padding-right: 3px;" class="fa-brands fa-wordpress"></i>WordPress</h5>
+          <p class=" card-text">
+          <ul>
+            <li>WordPress is a free and open-source platform under the GNU General Public License (GPL).
+            </li>
+            <li>Design theme customization in WordPress is straightforward.
+            </li>
+            <li>It allows you to manage users with different roles and permissions.
+            </li>
+            <li>WordPress media management is quick and easy to use.
+            </li>
+            <li>WordPress provides a WYSIWYG editor to manage your text content, which is very useful for manipulating
+              the layout of the document.
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-2">
+    <button id="oiiuy" class="btn hvr-bob btn-primary"> Click To ( Show OR Hide ) Some Tips About <br>( My Services )
+    </button>
+  </div>
+  <!-- e Servises -->
+  <!-- s Skills -->
+  <br id="Skills">
+  <br>
+  <br>
+  <div style="margin-bottom:50px ;" class="text-center wow fadeOutLeft ">
+    <h2 style="padding: 10px; margin-bottom: 40px;" class="h2 bg-dark text-center "><i style="padding-right:10px ;"
+        class="fa-solid fa-brain"></i> Skills</h2>
+    <div class="contentContainer">
+      <div class="skillBar">
+        <h4>HTML</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-90"></div>
+          <p class="fw-bold ">96%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>CSS3</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-80"></div>
+          <p class="fw-bold ">93%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>SASS</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-80"></div>
+          <p class="fw-bold ">93%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>JQuery</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-70"></div>
+          <p class="fw-bold ">90%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>GitHub</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-93"></div>
+          <p class="fw-bold ">93%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>Vue.js</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-85"></div>
+          <p class="fw-bold ">80%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>JavaScript</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-20"></div>
+          <p class="fw-bold ">85%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>Bootstrap</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-40"></div>
+          <p class="fw-bold ">95%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>WordPress</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-75"></div>
+          <p class="fw-bold ">75%</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <hr>
+  <div style="margin-bottom:50px ;" class="text-center wow fadeOutLeft ">
+    <h2 style="padding: 10px; margin-bottom: 40px;" class="h2 bg-dark text-center "><i style="padding-right:10px ;"
+        class="fa-solid fa-brain"></i> Soft Skills</h2>
+    <div class="contentContainer">
+      <div class="skillBar">
+        <h4>Communication</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-90"></div>
+          <p class="fw-bold ">96%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>Team Work</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-80"></div>
+          <p class="fw-bold ">93%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>Hard Work</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-80"></div>
+          <p class="fw-bold ">93%</p>
+        </div>
+      </div>
+
+      <div class="skillBar">
+        <h4>Problem-Solving</h4>
+        <div class="skillBarContainer">
+          <div class="skillBarValue value-70"></div>
+          <p class="fw-bold ">90%</p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <hr>
+  <!-- e Skills -->
+
+  <!-- s My Work -->
+  <br id="Some Of My Work">
+  <br>
+  <h2 style="margin-top: 30px;" class="h2 bg-dark p-2 text-center wow fadeInLeft"><i style="padding-right:10px ;"
+      class="fa-solid fa-briefcase"></i> Some Of My Work</h2>
+  <div style="padding: 10px; " class=" bg-dark text-center wow fadeInDown" data-wow-delay="1s">
+    <div class="row  bg-dark row-cols-1 row-cols-md-2 g-4 text-center wow bounceInRight" data-wow-duration="2s"
+      style=" width: 100%; margin: auto;  overflow: hidden;">
+      <div class="col-sm-6 ">
+        <div class="card  hvr-bounce-to-left toi">
+          <div class="card-body">
+            <h5 class="card-title"><i style="padding-right:10px ;" class="fa-solid fa-briefcase"></i>Some Of My Work
+            </h5>
+            <a target="_blank" href="View My Work/index.html" class="btn hvr-bob btn-primary"><i
+                style="padding-right:10px ;" class="fa-solid fa-briefcase"></i>Go To My Works</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card  hvr-bounce-to-left toi">
+          <div class="card-body">
+            <h5 class="card-title"><i style="padding-right:10px ;" class="fa-solid fa-graduation-cap"></i>My C.V </h5>
+            <a target="_blank" href="C.V/index.html" class="btn hvr-bob btn-primary"> <i style="padding-right:10px ;"
+                class="fa-solid fa-graduation-cap"></i>Go To My C.V as website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- e My Work -->
+  <br>
+  <!-- s Contact -->
+  <div style="margin-top: 100px;" class=" b  alert alert-primary text-center wow flash" data-wow-duration="2s"
+    role="alert">
+    <h4 class="h2" id="Contact"><i style="padding-right:10px ;" class="fa-solid fa-comments"></i>Contact</h4><br>
+    <a target="_blank" href="mailto:abdometwaly250@gmail.com "><i style="font-size:40px ; padding: 20px;"
+        class="fa-solid fa-envelope hvr-bob"></i></a>
+    <a target="_blank" href="tel:+20 01282488136"> <i style="font-size:40px ; padding:20px ;"
+        class="fa-brands fa-whatsapp hvr-bob"></i></a>
+    <a target="_blank" href="https://www.linkedin.com/in/abdallah-mohamed-5b9924224"> <i
+        style="font-size:40px ; padding:20px ;" class="fa-brands fa-linkedin hvr-bob"></i></a>
+    <a target="_blank" href="https://www.facebook.com/abdallah.metwally.925"><i style="font-size: 40px; padding: 20px;"
+        class="fa-brands fa-square-facebook hvr-bob"></i></a>
+    <br>
+    <p class="h4">Powered by : <strong>ABDALLAH Mohamed</strong></p>
+  </div>
+  <!-- e Contact -->
+  <div class="bg-dark text-center text-light">
+    <p class="fw-bolder p-1 ">All rights reseved &copy; 2022 </p>
+  </div>
+
+  <a href="#Home"><i class="fa-solid fa-circle-up i rounded-5" style="display: none;"></i></a>
+
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="jquery-3.6.1.min.js"></script>
+  <script src="js.js"></script>
+</body>
+
+</html>
