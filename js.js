@@ -16,7 +16,7 @@ window.onscroll = function () {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Abdallah", "Front-end", "vue Developer"];
+const textArray = ["Abdallah", "Front-end", " Developer"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
