@@ -773,8 +773,8 @@ body.dark {
 
 }
 
-@media screen and (min-width:768px) and (max-width:1023px){
-  #y{
-    height:60vh !important 
+@media screen and (min-width:768px) and (max-width:1023px) {
+  #y {
+    height: 75vh !important;
   }
 }
