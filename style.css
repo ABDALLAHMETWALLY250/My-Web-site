@@ -777,4 +777,8 @@ body.dark {
   #y {
     height: 75vh !important;
   }
+  #y p {
+    
+    height: 75vh !important;
+  }
 }
